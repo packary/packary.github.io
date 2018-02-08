@@ -16,7 +16,7 @@ const IndexPage = () => (
     </div>
     <div className="features">
       <div className="feature">
-        <Feature title="Simple" icon="thing">
+        <Feature title="Simple" icon="lightbulb">
           <p>
             Create a repository in one click, configure your package manager and
             push your code. No hosting, proxying or configuration.
@@ -24,7 +24,7 @@ const IndexPage = () => (
         </Feature>
       </div>
       <div className="feature">
-        <Feature title="Reliable" icon="thing">
+        <Feature title="Reliable" icon="lock">
           <p>
             Create a repository in one click, configure your package manager and
             push your code. No hosting, proxying or configuration.
@@ -32,7 +32,7 @@ const IndexPage = () => (
         </Feature>
       </div>
       <div className="feature">
-        <Feature title="Made for Teams" icon="thing">
+        <Feature title="Made for Teams" icon="users">
           <p>
             Create a repository in one click, configure your package manager and
             push your code. No hosting, proxying or configuration.
@@ -46,12 +46,15 @@ const IndexPage = () => (
         <p>We're looking for people to help us test!</p>
       </div>
       <form>
-        <div>
-          <input name="email" type="email" placeholder="Your email address" />
-        </div>
-        <div>
+        <p>
+          <div className="icon-input">
+            <i className="icon-mail"/>
+            <input name="email" type="email" placeholder="Email address" />
+          </div>
+        </p>
+        <p>
           <button type="submit">Sign up</button>
-        </div>
+        </p>
       </form>
     </div>
   </div>

@@ -2,9 +2,9 @@ import React from 'react'
 
 const Feature = ({ title, icon, children }) => (
   <div>
-    <div>{icon}</div>
+    <div className="icon"><i className={`icon-${icon}`}/></div>
     <h4>{title}</h4>
-    <p>{children}</p>
+    {children}
   </div>
 )
 

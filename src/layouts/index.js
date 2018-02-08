@@ -3,6 +3,7 @@ import T from 'prop-types'
 import Helmet from 'react-helmet'
 
 import './index.css'
+import './fontello.css'
 
 const TemplateWrapper = ({ children }) => (
   <div>
