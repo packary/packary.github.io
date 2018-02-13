@@ -2,10 +2,6 @@ img {
     margin-bottom: 0;
 }
 
-form p:last-child {
-    margin-bottom: 0;
-}
-
 .hero {
     display: flex;
     background: linear-gradient(to right, rgb(250, 111, 117), rgb(253, 112, 166));
@@ -56,12 +52,15 @@ form p:last-child {
 .signup {
     background: rgb(78, 78, 78);
     color: white;
+}
+
+.signup .container {
     display: flex;
     padding: 5rem 0;
     align-items: center;
 }
 
-.signup > * {
+.signup .container > * {
     flex: 0 0 50%;
     padding: 2rem;
 }
@@ -72,6 +71,10 @@ form p:last-child {
 
 .signup .spam {
     font-style: italic;
+}
+
+.signup form .input:not(:last-child) {
+    margin-bottom: 1.5em;
 }
 
 .signup input, .signup button {
@@ -111,7 +114,7 @@ form p:last-child {
     color: rgb(78, 78, 78);
 }
 
-@media(max-width: 750px) {
+@media(max-width: 850px) {
     .hero {
         padding: 3rem 0;
     }
@@ -124,6 +127,10 @@ form p:last-child {
     .hero .demo {
         display: none;
     }
+}
+
+@media(max-width: 750px) {
+
 
     .features {
         flex-direction: column;
@@ -135,13 +142,13 @@ form p:last-child {
         padding: 1em 2em;
     }
 
-    .signup {
+    .signup .container {
         flex-direction: column;
         text-align: center;
         padding: 2rem;
     }
 
-    .signup > * {
+    .signup .container > * {
         padding: 0;
         flex: 1;
     }
@@ -152,12 +159,8 @@ form p:last-child {
 }
 
 @media(min-width: 1000px) {
-    .features {
+    .container {
         width: 75%;
         margin: 0 auto;
-    }
-
-    .feature {
-        padding: 1em 3%;
     }
 }
