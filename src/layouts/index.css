@@ -2,42 +2,50 @@ img {
     margin-bottom: 0;
 }
 
+form p:last-child {
+    margin-bottom: 0;
+}
+
 .hero {
     display: flex;
     background: linear-gradient(to right, rgb(250, 111, 117), rgb(253, 112, 166));
+    padding: 3rem;
 }
 
 .hero .title {
-    width: 40%;
-    padding: 5rem 10%;
+    flex: 0 0 40%;
     color: white;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    padding-right: 1em;
 }
 
 .title h1 {
     font-size: 3em;
 }
 
+.title h3 {
+    font-weight: 500;
+}
+
 .hero .demo {
-    width: 60%;
-    padding: 5%;
+    flex: 0 0 60%;
     display: flex;
     align-items: center;
 }
 
 .features {
     display: flex;
-    justify-content: space-evenly;
-    padding: 5rem 5%;
-    max-width: 90%;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    padding: 1em;
 }
 
 .feature {
-    padding: 2em;
     text-align: center;
+    padding: 1em;
+
+    flex: 0 0 50%;
 }
 
 .feature .icon {
@@ -49,16 +57,33 @@ img {
     background: rgb(78, 78, 78);
     color: white;
     display: flex;
-    justify-content: space-evenly;
-    padding: 5rem 5%;
+    padding: 5rem 0;
+    align-items: center;
 }
 
-.signup form {
-    width: 33%;
+.signup > * {
+    flex: 0 0 50%;
+    padding: 2rem;
+}
+
+.signup p {
+    font-size: .9rem;
+}
+
+.signup .spam {
+    font-style: italic;
 }
 
 .signup input, .signup button {
     width: 100%;
+}
+
+.signup input {
+    padding: .75em;
+    font-size: .75rem;
+}
+
+.signup button {
     padding: .5em;
 }
 
@@ -71,23 +96,28 @@ img {
 .icon-input {
     background: white;
     position: relative;
+    font-size: .75rem;
 }
 
 .icon-input input {
     border: none;
-    padding-left: 2em;
+    padding-left: 2.75em;
 }
 
 .icon-input i {
     position: absolute;
-    left: .25em;
-    top: .5em;
+    left: .75em;
+    top: .75em;
     color: rgb(78, 78, 78);
 }
 
-@media(max-width: 900px) {
+@media(max-width: 750px) {
+    .hero {
+        padding: 3rem 0;
+    }
+
     .hero .title {
-        width: 100%;
+        flex: 1;
         text-align: center;
     }
 
@@ -95,12 +125,39 @@ img {
         display: none;
     }
 
-    .features, .signup {
+    .features {
         flex-direction: column;
+        padding: 1em 0;
+    }
+
+    .feature {
+        flex: 1;
+        padding: 1em 2em;
     }
 
     .signup {
+        flex-direction: column;
         text-align: center;
-        align-items: center;
+        padding: 2rem;
+    }
+
+    .signup > * {
+        padding: 0;
+        flex: 1;
+    }
+
+    .signup form {
+        width: 100%;
+    }
+}
+
+@media(min-width: 1000px) {
+    .features {
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .feature {
+        padding: 1em 3%;
     }
 }
