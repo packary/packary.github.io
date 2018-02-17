@@ -49,6 +49,20 @@ img {
     align-items: center;
 }
 
+.why {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.why ul {
+    margin: 0;
+}
+
+.why li {
+    list-style: none;
+}
+
 .how-it-works .container {
     display: flex;
 }

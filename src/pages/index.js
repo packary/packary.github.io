@@ -14,19 +14,16 @@ const IndexPage = () => (
         <img src={demoGif} />
       </div>
     </div>
-    <div className="how-it-works">
+    <div className="why">
       <h2>Why?</h2>
-      <div className="container">
-        <div className="step">
-        <p>Sharing and re-using code is great. You know this. But you can't just put your company's code on the internet.</p>
-        </div>
-        <div className="step">
-          <p>Hosting tools like Nexus or mirroring CouchDB yourself can be frustrating and expensive.</p>
-        </div>
-        <div className="step">
-          <p>Using Packary you can deploy a registry in seconds, for free, and scale up without breaking the back.</p>
-        </div>
-      </div>
+      <ul>
+        <li><i className="icon-magic"/>
+          Sharing and re-using code is great. You know this. But you can't just put your company's code on the internet.</li>
+        <li><i className="icon-magic"/>
+          Hosting tools like Nexus or mirroring CouchDB yourself can be frustrating and expensive.</li>
+        <li><i className="icon-magic"/>
+          Using Packary you can deploy a registry in seconds, for free, and scale up without breaking the bank.</li>
+      </ul>
     </div>
     <div className="how-it-works">
       <h2>How it Works</h2>
