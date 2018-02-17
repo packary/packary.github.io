@@ -14,6 +14,7 @@ img {
 
 .container {
     padding: 1em;
+    margin: 0 auto;
 }
 
 .container > * {
@@ -50,7 +51,7 @@ img {
 }
 
 .why {
-    width: 50%;
+    padding: 0 10%;
     margin: 0 auto;
     text-align: center;
 }
@@ -180,13 +181,25 @@ img {
     }
 }
 
-@media(max-width: 750px) {
+@media(min-width: 1000px) {
+    .container {
+        width: 88%;
+    }
+}
 
+@media(max-width: 1000px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media(max-width: 768px) {
     h2 {
         padding-bottom: 0;
     }
 
     .container {
+        width: 66%;
         flex-direction: column;
         padding: 1em 0;
     }
@@ -196,12 +209,16 @@ img {
         padding: 1em 2em;
     }
 
+    .why {
+        padding: 0;
+    }
+
     .how-it-works .step {
         border: none;
     }
 
     .signup .container > * {
-        padding: 0;
+        padding: 1em;
         flex: 1;
     }
 
@@ -210,9 +227,8 @@ img {
     }
 }
 
-@media(min-width: 1000px) {
+@media(max-width: 500px) {
     .container {
-        width: 88%;
-        margin: 0 auto;
+        width: 100%;
     }
 }
