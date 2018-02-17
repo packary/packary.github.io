@@ -14,37 +14,74 @@ const IndexPage = () => (
         <img src={demoGif} />
       </div>
     </div>
-    <div className="container">
-      <div className="features">
+    <div className="how-it-works">
+      <h2>Why?</h2>
+      <div className="container">
+        <div className="step">
+        <p>Sharing and re-using code is great. You know this. But you can't just put your company's code on the internet.</p>
+        </div>
+        <div className="step">
+          <p>Hosting tools like Nexus or mirroring CouchDB yourself can be frustrating and expensive.</p>
+        </div>
+        <div className="step">
+          <p>Using Packary you can deploy a registry in seconds, for free, and scale up without breaking the back.</p>
+        </div>
+      </div>
+    </div>
+    <div className="how-it-works">
+      <h2>How it Works</h2>
+      <div className="container">
+        <div className="step">
+          <h4>1. Deploy a registry</h4>
+          <p>Choose your language and deploy a registry in one-click. Your first registry is free.</p>
+        </div>
+        <div className="step">
+          <h4>2. Configure your client</h4>
+          <p>Use our simple docs to configure your package manager. Chunky config blocks are
+            ready to copy-paste.</p>
+        </div>
+        <div className="step">
+          <h4>3. Be awesome</h4>
+          <p>Our registries use the same APIs as their open source counterparts, so they'll work
+            with all your tooling.</p>
+        </div>
+      </div>
+    </div>
+    <div className="features">
+      <h2>Features</h2>
+      <div className="container">
         <div className="feature">
-          <Feature title="Easy" icon="lightbulb">
+          <Feature title="Easy" icon="magic">
             <p>
-              Use our simple UI to deploy a registry in one click, and copy-paste your package manager configs.
+              Use our simple UI to deploy a registry in <strong>one click</strong>,
+              and <strong>copy-paste</strong> your package manager configs.
               No hosting, proxying or configuration.
             </p>
           </Feature>
         </div>
         <div className="feature">
-          <Feature title="Versatile" icon="users">
+          <Feature title="Versatile" icon="sitemap">
             <p>
-              Keep your Maven artefacts, Docker containers, NPM and PyPi packages in one place.
+              Keep your <strong>Maven</strong> artefacts, <strong>Docker </strong>
+              containers, <strong>NPM</strong> and <strong>PyPi</strong> packages in one place.
             </p>
           </Feature>
         </div>
         <div className="feature">
-          <Feature title="Secure & Reliable" icon="lock">
+          <Feature title="Secure" icon="lock">
             <p>
-              Everything is over HTTPS and safe from prying eyes.
-              We store your code on multi-region cloud providers, so it's always available.
+              Use our <strong>service accounts</strong> for CI environments - no more personal passwords
+              in Jenkins.
             </p>
           </Feature>
         </div>
         <div className="feature">
-          <Feature title="Made for Teams" icon="users">
-            <p>
-              Each developer has an account, and you control who can pull this and publish that.
-            </p>
-          </Feature>
+          <Feature title="Reliable" icon="globe">
+              <p>
+                We store your packages with <strong>multi-region</strong> cloud providers, so
+                it's <strong>always available</strong>.
+              </p>
+            </Feature>
         </div>
       </div>
     </div>

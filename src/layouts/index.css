@@ -1,5 +1,23 @@
+body {
+    background: #fbfbfb;
+}
+
+h2 {
+    margin: 0;
+    padding: 2em 1em 1em;
+    text-align: center;
+}
+
 img {
     margin-bottom: 0;
+}
+
+.container {
+    padding: 1em;
+}
+
+.container > * {
+    padding: 1em;
 }
 
 .hero {
@@ -31,17 +49,28 @@ img {
     align-items: center;
 }
 
-.features {
+.how-it-works .container {
+    display: flex;
+}
+
+.how-it-works .step {
+    flex: 0 0 33%;
+    text-align: center;
+    border-right: 1px solid #ccc;
+}
+
+.how-it-works .step:last-child {
+    border-right: none;
+}
+
+.features .container {
     display: flex;
     flex-wrap: wrap;
-    padding: 1em;
 }
 
 .feature {
-    text-align: center;
-    padding: 1em;
-
     flex: 0 0 50%;
+    text-align: center;
 }
 
 .feature .icon {
@@ -56,7 +85,6 @@ img {
 
 .signup .container {
     display: flex;
-    padding: 5rem 0;
     align-items: center;
 }
 
@@ -65,8 +93,17 @@ img {
     padding: 2rem;
 }
 
+.signup h2 {
+    padding: 0 0 1em 0;
+}
+
+.signup form {
+    margin-bottom: 0;
+}
+
 .signup p {
     font-size: .9rem;
+    text-align: center;
 }
 
 .signup .spam {
@@ -131,21 +168,22 @@ img {
 
 @media(max-width: 750px) {
 
+    h2 {
+        padding-bottom: 0;
+    }
 
-    .features {
+    .container {
         flex-direction: column;
         padding: 1em 0;
     }
 
-    .feature {
+    .container > * {
         flex: 1;
         padding: 1em 2em;
     }
 
-    .signup .container {
-        flex-direction: column;
-        text-align: center;
-        padding: 2rem;
+    .how-it-works .step {
+        border: none;
     }
 
     .signup .container > * {
@@ -160,7 +198,7 @@ img {
 
 @media(min-width: 1000px) {
     .container {
-        width: 75%;
+        width: 88%;
         margin: 0 auto;
     }
 }
