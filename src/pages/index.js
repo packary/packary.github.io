@@ -1,17 +1,28 @@
 import React from 'react'
-import Link from 'gatsby-link'
 import demoGif from '../demo.gif'
 import Feature from '../components/Feature'
+import logoTitle from '../logo-title.svg';
 
 const IndexPage = () => (
   <div>
-    <div className="hero">
-      <div className="title">
-        <h1>packary</h1>
-        <h3>Cheap, secure hosting for your private packages.</h3>
+    <nav className="navbar">
+      <div className="navbar__title"><img className="navbar__logo" src={logoTitle} /></div>
+      <div className="navbar__links">
+        <li>
+          <ul className="navbar__links__item">About Us</ul>
+          <ul className="navbar__links__item">Contact Us</ul>
+        </li>
       </div>
-      <div className="demo">
-        <img src={demoGif} />
+    </nav>
+    <div className="hero">
+      <div className="hero-inner">
+        <div className="title">
+          <h1>packary</h1>
+          <h3>Cheap, secure hosting for your private packages.</h3>
+        </div>
+        <div className="demo">
+          <img src={demoGif}/>
+        </div>
       </div>
     </div>
     <div className="why">
@@ -19,11 +30,15 @@ const IndexPage = () => (
       <div className="container">
         <ul>
           <li><i className="icon-magic"/>
-            Sharing and re-using code is great. You know this. But you can't just put your company's code on the internet.</li>
+            Sharing and re-using code is great. You know this. But you can't just put your company's code on the
+            internet.
+          </li>
           <li><i className="icon-magic"/>
-            Hosting tools like Nexus or mirroring CouchDB yourself can be frustrating and expensive.</li>
+            Hosting tools like Nexus or mirroring CouchDB yourself can be frustrating and expensive.
+          </li>
           <li><i className="icon-magic"/>
-            Using Packary you can deploy a registry in seconds, for free, and scale up without breaking the bank.</li>
+            Using Packary you can deploy a registry in seconds, for free, and scale up without breaking the bank.
+          </li>
         </ul>
       </div>
     </div>
@@ -76,11 +91,11 @@ const IndexPage = () => (
         </div>
         <div className="feature">
           <Feature title="Reliable" icon="globe">
-              <p>
-                We store your packages with <strong>multi-region</strong> cloud providers, so
-                it's <strong>always available</strong>.
-              </p>
-            </Feature>
+            <p>
+              We store your packages with <strong>multi-region</strong> cloud providers, so
+              it's <strong>always available</strong>.
+            </p>
+          </Feature>
         </div>
       </div>
     </div>
@@ -96,7 +111,7 @@ const IndexPage = () => (
           <div className="input">
             <div className="icon-input">
               <i className="icon-mail"/>
-              <input name="email" type="email" placeholder="Email address" />
+              <input name="email" type="email" placeholder="Email address"/>
             </div>
           </div>
           <div className="input">

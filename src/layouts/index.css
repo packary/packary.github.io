@@ -21,10 +21,67 @@ img {
     padding: 1em;
 }
 
-.hero {
+/*
+colors:
+
+light= #F7F7F7
+dark= #343434
+gray= #999999
+blue= #456990
+coral= #FF6F6F
+hot_pink= #FF6FAC
+ */
+
+.navbar {
+    height: 80px;
+    background: #F7F7F7;
+    width: 100%;
+    padding: 0 1em;
     display: flex;
-    background: linear-gradient(to right, rgb(250, 111, 117), rgb(253, 112, 166));
+    justify-content: space-between;
+    position: relative;
+    z-index: 100;
+    -webkit-box-shadow: 0 -2px 8px #999999;
+    -moz-box-shadow: 0 -2px 8px #999999;
+    box-shadow: 0 -2px 8px #999999;
+}
+
+.navbar__title {
+    color: #343434;
+    margin: 0;
+}
+
+.navbar__logo {
+    margin: 16px 0;
+    height: 48px;
+}
+
+.navbar__links {
+    margin: 0 1em;
+    font-weight: 300;
+}
+
+.navbar__links li {
+    list-style: none;
+    display: inline;
+}
+
+.navbar__links__item {
+    line-height: 80px;
+    display: inline;
+    text-transform: uppercase;
+    color: #343434;
+}
+
+.hero {
+    background: linear-gradient(123deg, rgb(250, 111, 117), rgb(253, 112, 166));
     padding: 3rem;
+}
+
+.hero > .hero-inner {
+    max-width: 1020px;
+    margin: auto;
+    display: flex;
 }
 
 .hero .title {
@@ -33,15 +90,15 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    padding-right: 1em;
+    padding-right: 2em;
 }
 
 .title h1 {
-    font-size: 3em;
+    font-size: 2.4em;
 }
 
 .title h3 {
-    font-weight: 500;
+    font-weight: 300;
 }
 
 .hero .demo {
@@ -143,7 +200,7 @@ img {
 }
 
 .signup button {
-    background: linear-gradient(to right, rgb(250, 111, 117), rgb(253, 112, 166));
+    background: linear-gradient(123deg, rgb(250, 111, 117), rgb(253, 112, 166));
     color: white;
     border: none;
 }

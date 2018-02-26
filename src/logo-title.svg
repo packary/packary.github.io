@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="260px" height="80px" viewBox="0 0 260 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Logo Title</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FF6F6F" offset="0%"></stop>
+            <stop stop-color="#FF6FAC" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#000000" stop-opacity="0.5" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#FF6F6F" offset="0%"></stop>
+            <stop stop-color="#FF6F79" offset="15.9642519%"></stop>
+            <stop stop-color="#FF6FAC" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Logo-Title">
+            <text id="packary.io" fill="url(#linearGradient-1)" font-family="OpenSans, Open Sans" font-size="36" font-weight="normal" line-spacing="80">
+                <tspan x="72" y="51">packary.io</tspan>
+            </text>
+            <g id="Logo" transform="translate(16.000000, 16.000000)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+                <g transform="translate(0.705882, 0.176471)">
+                    <path d="M23.2941383,19.0445344 C20.9355554,19.0445344 13.7543537,16.1450144 1.75053307,10.3459743 L1.75053291,10.3459746 C1.36397179,10.1592271 1.20199084,9.69446862 1.38873834,9.3079075 C1.47162053,9.13634412 1.61462774,9.0011969 1.79059774,8.92813519 L22.7004427,0.246490335 C23.0806179,0.0886438306 23.5078765,0.0880171153 23.8885131,0.244747639 L44.9750806,8.92731292 C45.3720597,9.09077259 45.5613645,9.54509794 45.3979048,9.942077 C45.324663,10.1199526 45.188069,10.2643536 45.0145345,10.3473589 C32.8927375,16.1454759 25.6526054,19.0445344 23.2941383,19.0445344 Z" id="Line-3" stroke-width="0.777327935" fill="url(#linearGradient-1)"></path>
+                    <path d="M-2.04542266e-14,12.0495735 L-1.687539e-14,37.8303995 C-1.67985563e-14,38.4577937 0.377110426,39.0236996 0.956148883,39.265232 L21.1409548,47.6848542 C21.9333909,48.0154004 22.843748,47.6409648 23.1742943,46.8485287 C23.2533917,46.6589041 23.2941176,46.4554818 23.2941176,46.2500217 L23.2941176,20.4691956 C23.2941176,19.8418014 22.9170072,19.2758955 22.3379688,19.0343631 L2.15316286,10.614741 C1.36072676,10.2841947 0.450369666,10.6586304 0.119823385,11.4510665 C0.040725929,11.640691 -2.08973545e-14,11.8441133 -2.08721929e-14,12.0495735 Z" id="Path-2" stroke-width="0.777327935" fill="url(#linearGradient-3)"></path>
+                    <path d="M25.3364526,47.7139492 L31.9330233,45.5346773 C32.5698719,45.3242852 33,44.7291936 33,44.0584917 L33,38.4335952 C33,37.811915 33.3703594,37.2500062 33.9416758,37.0048859 L45.6465595,31.9829683 C46.2178759,31.7378481 46.5882353,31.1759393 46.5882353,30.554259 L46.5882353,12.0495735 C46.5882353,11.1909607 45.8921922,10.4949176 45.0335794,10.4949176 C44.8281193,10.4949176 44.624697,10.5356435 44.4350724,10.614741 L24.2502665,19.0343631 C23.6712281,19.2758955 23.2941176,19.8418014 23.2941176,20.4691956 L23.2941176,46.2377636 C23.2941176,47.0963764 23.9901608,47.7924195 24.8487735,47.7924195 C25.0144763,47.7924195 25.1791136,47.7659285 25.3364526,47.7139492 Z" id="Path-3" stroke-width="0.777327935" fill="url(#linearGradient-1)"></path>
+                    <polygon id="Path-4" stroke-width="0.777327935" fill="#FFFFFF" points="33 27.2064777 38.8235294 24.7773279 38.8235294 23.805668 33 26.2348178"></polygon>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
