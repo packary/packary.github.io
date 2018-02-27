@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="25px" height="23px" viewBox="0 0 25 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_stack</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="0%" x2="100%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FF6F6F" offset="0%"></stop>
+            <stop stop-color="#FF6FAC" offset="100%"></stop>
+        </linearGradient>
+        <path d="M12.5,14.001 L0,7.5 L12.5,1 L25,7.5 L12.5,14.001 Z M2.236,7.5 L12.5,12.838 L22.763,7.5 L12.5,2.163 L2.236,7.5 Z M12.5,17.837 L22.801,13 L25.037,13 L12.499,19 L-0.039,13 L2.197,13 L12.5,17.837 Z M12.5,22.838 L22.801,18 L25.037,18 L12.5,24.001 L-0.038,18 L2.198,18 L12.5,22.838 Z" id="path-2"></path>
+    </defs>
+    <g id="2.-Icon-/-2.-Icon-Box-/-25-Size--/-ic_stack" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(0.000000, -1.000000)">
+        <mask id="mask-3" fill="white">
+            <use xlink:href="#path-2"></use>
+        </mask>
+        <use id="ic_stack" fill="url(#linearGradient-1)" fill-rule="nonzero" xlink:href="#path-2"></use>
+    </g>
+</svg>

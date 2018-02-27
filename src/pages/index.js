@@ -1,46 +1,12 @@
 import React from 'react'
-import Hero from '../components/Hero';
+import Hero from '../components/Home/Hero';
+import BeInControl from '../components/Home/BeInControl';
 import Feature from '../components/Feature'
 
 const IndexPage = () => (
   <div>
     <Hero />
-    <div className="why">
-      <h2>Why?</h2>
-      <div className="container">
-        <ul>
-          <li><i className="icon-magic"/>
-            Sharing and re-using code is great. You know this. But you can't just put your company's code on the
-            internet.
-          </li>
-          <li><i className="icon-magic"/>
-            Hosting tools like Nexus or mirroring CouchDB yourself can be frustrating and expensive.
-          </li>
-          <li><i className="icon-magic"/>
-            Using Packary you can deploy a registry in seconds, for free, and scale up without breaking the bank.
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div className="how-it-works">
-      <h2>How it Works</h2>
-      <div className="container">
-        <div className="step">
-          <h4>1. Deploy a registry</h4>
-          <p>Choose your language and deploy a registry in one-click. Your first registry is free.</p>
-        </div>
-        <div className="step">
-          <h4>2. Configure your client</h4>
-          <p>Use our simple docs to configure your package manager. Chunky config blocks are
-            ready to copy-paste.</p>
-        </div>
-        <div className="step">
-          <h4>3. Be awesome</h4>
-          <p>Our registries use the same APIs as their open source counterparts, so they'll work
-            with all your tooling.</p>
-        </div>
-      </div>
-    </div>
+    <BeInControl />
     <div className="features">
       <h2>Features</h2>
       <div className="container">
@@ -76,6 +42,42 @@ const IndexPage = () => (
               it's <strong>always available</strong>.
             </p>
           </Feature>
+        </div>
+      </div>
+    </div>
+    <div className="container why">
+      <h2>Why?</h2>
+      <div>
+        <ul>
+          <li><i className="icon-magic"/>
+            Sharing and re-using code is great. You know this. But you can't just put your company's code on the
+            internet.
+          </li>
+          <li><i className="icon-magic"/>
+            Hosting tools like Nexus or mirroring CouchDB yourself can be frustrating and expensive.
+          </li>
+          <li><i className="icon-magic"/>
+            Using Packary you can deploy a registry in seconds, for free, and scale up without breaking the bank.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div className="how-it-works">
+      <h2>How it Works</h2>
+      <div className="container">
+        <div className="step">
+          <h4>1. Deploy a registry</h4>
+          <p>Choose your language and deploy a registry in one-click. Your first registry is free.</p>
+        </div>
+        <div className="step">
+          <h4>2. Configure your client</h4>
+          <p>Use our simple docs to configure your package manager. Chunky config blocks are
+            ready to copy-paste.</p>
+        </div>
+        <div className="step">
+          <h4>3. Be awesome</h4>
+          <p>Our registries use the same APIs as their open source counterparts, so they'll work
+            with all your tooling.</p>
         </div>
       </div>
     </div>

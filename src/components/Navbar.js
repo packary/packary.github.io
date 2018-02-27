@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/navbar.scss';
-import logoTitle from '../logo-title.svg';
+import logoTitle from '../svgs/logo-title.svg';
 
 const Navbar = () => (
   <nav className="navbar">

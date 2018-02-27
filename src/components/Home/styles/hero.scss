@@ -1,18 +1,18 @@
-@import '../../utils/constants';
+@import '../../../utils/constants';
 
 .hero {
   background: linear-gradient(123deg, $coral, $hotPink);
   padding: 3rem;
 
   &__inner {
-    max-width: 1020px;
+    max-width: $maxWidth;
     margin: auto;
     display: flex;
   }
 
   &__title {
     flex: 0 0 40%;
-    color: white;
+    color: $offWhite;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

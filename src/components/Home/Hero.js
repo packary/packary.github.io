@@ -1,5 +1,5 @@
 import React from 'react';
-import demoGif from '../demo.gif'
+import demoGif from '../../demo.gif'
 import './styles/hero.scss';
 
 const Hero = () => (
