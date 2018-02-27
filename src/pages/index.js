@@ -1,30 +1,10 @@
 import React from 'react'
-import demoGif from '../demo.gif'
+import Hero from '../components/Hero';
 import Feature from '../components/Feature'
-import logoTitle from '../logo-title.svg';
 
 const IndexPage = () => (
   <div>
-    <nav className="navbar">
-      <div className="navbar__title"><img className="navbar__logo" src={logoTitle} /></div>
-      <div className="navbar__links">
-        <li>
-          <ul className="navbar__links__item">About Us</ul>
-          <ul className="navbar__links__item">Contact Us</ul>
-        </li>
-      </div>
-    </nav>
-    <div className="hero">
-      <div className="hero-inner">
-        <div className="title">
-          <h1>packary</h1>
-          <h3>Cheap, secure hosting for your private packages.</h3>
-        </div>
-        <div className="demo">
-          <img src={demoGif}/>
-        </div>
-      </div>
-    </div>
+    <Hero />
     <div className="why">
       <h2>Why?</h2>
       <div className="container">
@@ -121,6 +101,6 @@ const IndexPage = () => (
       </div>
     </div>
   </div>
-)
+);
 
-export default IndexPage
+export default IndexPage;

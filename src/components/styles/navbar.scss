@@ -1,0 +1,42 @@
+@import '../../utils/constants';
+
+.navbar {
+  height: 80px;
+  background: $offWhite;
+  width: 100%;
+  padding: 0 1em;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 100;
+  -webkit-box-shadow: 0 -2px 8px #999999;
+  -moz-box-shadow: 0 -2px 8px #999999;
+  box-shadow: 0 -2px 8px #999999;
+
+  &__title {
+  margin: 0;
+  }
+
+  &__logo {
+    margin: 16px 0;
+    height: 48px;
+  }
+
+  &__links {
+    margin: 0 1em;
+    font-weight: 300;
+
+    li {
+      list-style: none;
+      display: inline;
+    }
+
+    &__item {
+      line-height: 80px;
+      display: inline;
+      text-transform: uppercase;
+      color: #343434;
+    }
+  }
+
+}

@@ -1,9 +1,10 @@
 import React from 'react'
 import T from 'prop-types'
 import Helmet from 'react-helmet'
+import Navbar from '../components/Navbar';
 
 import favicon from '../favicon.png';
-import './index.css'
+import './index.scss'
 import './fontello.css'
 
 const TemplateWrapper = ({ children }) => (
@@ -18,6 +19,7 @@ const TemplateWrapper = ({ children }) => (
         { rel: 'icon', href: favicon },
       ]}
     />
+    <Navbar />
     {children()}
   </div>
 );

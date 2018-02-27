@@ -1,12 +1,13 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "packary-landing-page",
+  "description": "Landing page for packary.io",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "packary <5727701+dan-j@users.noreply.github.com>",
   "dependencies": {
     "gatsby": "^1.9.158",
     "gatsby-link": "^1.6.34",
     "gatsby-plugin-react-helmet": "^2.0.3",
+    "gatsby-plugin-sass": "^1.0.17",
     "gatsby-plugin-typography": "^1.7.13",
     "prop-types": "^15.6.0",
     "react": "^15.6.2",
