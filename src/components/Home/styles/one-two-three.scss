@@ -1,0 +1,55 @@
+@import "../../../utils/constants";
+
+.one-two-three {
+  display: flex;
+  flex-flow: row wrap;
+  background: $darkBlue;
+  color: $offWhite;
+  padding: 2em;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  h1, p, span {
+    font-weight: 300;
+  }
+  justify-content: space-around;
+
+  &--block {
+    flex: 0 0 45%;
+    align-self: center;
+
+    @media screen and (max-width: 992px) {
+      flex: 0 0 50%;
+    }
+
+    @media screen and (max-width: 768px) {
+      flex: 0 0 100%;
+    }
+
+    &--sign-me-up {
+      width: 80%;
+    }
+
+    &:first-child {
+      padding-right: 1em;
+    }
+
+    &:last-child {
+      padding-left: 1em;
+    }
+  }
+
+  &__list {
+
+    &__item {
+      p {
+        margin-left: 1em;
+        line-height: 1.5;
+      }
+      &--num {
+        display: inline-block;
+        width: 2em;
+      }
+    }
+  }
+}

@@ -156,21 +156,6 @@ img {
   color: rgb(78, 78, 78);
 }
 
-@media(max-width: 850px) {
-  .hero {
-    padding: 3rem 0;
-  }
-
-  .hero .title {
-    flex: 1;
-    text-align: center;
-  }
-
-  .hero .demo {
-    display: none;
-  }
-}
-
 @media(min-width: 1020px) {
   .container {
     width: 88%;
@@ -189,7 +174,6 @@ img {
   }
 
   .container {
-    width: 66%;
     flex-direction: column;
     padding: 1em 0;
   }

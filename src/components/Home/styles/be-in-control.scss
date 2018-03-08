@@ -11,10 +11,13 @@
     margin-top: 1em;
     width: 100%;
     display: flex;
+    //flex-wrap: wrap;
+    flex-flow: row wrap;
 
     &__item {
       flex-grow: 1;
       margin: 1em;
+      flex-basis: 250px;
       text-align: center;
       font-weight: 300;
 

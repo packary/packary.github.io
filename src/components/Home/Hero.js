@@ -1,4 +1,5 @@
 import React from 'react';
+import SignUpForm from '../SignUpForm';
 import demoGif from '../../demo.gif'
 import './styles/hero.scss';
 
@@ -8,6 +9,7 @@ const Hero = () => (
       <div className="hero__title">
         <h1 className="hero__title--big">packary</h1>
         <h3 className="hero__title--sub">Cheap, secure hosting for your private packages.</h3>
+        <SignUpForm />
       </div>
       <div className="hero__demo">
         <img src={demoGif}/>
