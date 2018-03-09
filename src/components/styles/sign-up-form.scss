@@ -7,10 +7,16 @@
 
   &--left {
     text-align: left;
+    justify-content: flex-start;
   }
 
   &--right {
+    align-self: center;
     text-align: right;
+
+    @media screen and (max-width: 768px) {
+      align-self: flex-end;
+    }
   }
 
   &__p {
@@ -66,7 +72,7 @@
       }
 
       &--light {
-        background: linear-gradient(123deg, $coral, $hotPink);
+        background: linear-gradient(123deg, $coral, $blueBell);
       }
     }
 

@@ -3,7 +3,7 @@ import SignUpForm from '../SignUpForm';
 import './styles/one-two-three.scss';
 
 const OneTwoThree = () => (
-  <div className="container">
+  <div className="container one-two-three--outer">
     <div className="one-two-three">
 
       <div className="one-two-three--block">

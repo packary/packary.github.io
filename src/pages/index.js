@@ -1,13 +1,17 @@
 import React from 'react'
 import Hero from '../components/Home/Hero';
-import BeInControl from '../components/Home/BeInControl';
+import SuperSimple from '../components/Home/SuperSimple';
 import OneTwoThree from '../components/Home/OneTwoThree';
+import FurtherDetails from '../components/Home/FurtherDetails';
+import { Footer } from "../components/Footer";
 
 const IndexPage = () => (
   <div>
     <Hero />
-    <BeInControl />
+    <SuperSimple />
     <OneTwoThree />
+    <FurtherDetails />
+    <Footer />
   </div>
 );
 

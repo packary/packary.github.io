@@ -4,9 +4,9 @@ import cogIcon from '../../svgs/cog-outline-grad.svg';
 import stackIcon from '../../svgs/stack-grad.svg';
 import teamIcon from '../../svgs/team-grad.svg';
 
-const BeInControl = () => (
+const SuperSimple = () => (
   <div className="container in-control">
-    <h1 className="center">Be in control of your own libraries</h1>
+    <h1 className="center">Super simple hosting for your private packages</h1>
     <p className="center smaller light">Most organisations have private libraries that need hosting + distributing,
       but many alternatives are costly or require maintenance</p>
     <div className="in-control__info">
@@ -30,4 +30,4 @@ const BeInControl = () => (
   </div>
 );
 
-export default BeInControl;
+export default SuperSimple;

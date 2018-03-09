@@ -1,0 +1,16 @@
+@import "../../utils/constants";
+
+.footer {
+  width: 100%;
+  background-color: $gray;
+  color: $offWhite;
+  border-top: 1px solid #888888;
+
+  padding: 2em 1em;
+  text-align: center;
+
+  &__list {
+    margin: 0;
+    list-style: none;
+  }
+}
