@@ -6,10 +6,15 @@ const SignUpForm = ({buttonModifier, align}) => (
   <div className={`sign-up-form sign-up-form`}>
     <div className={`sign-up-form--${align}`}>
       <p className="sign-up-form__p">Register your interest for early access!</p>
-      <form className={`sign-up-form__form sign-up-form__form--${align}`}>
+      <form
+        className={`sign-up-form__form sign-up-form__form--${align}`}
+        action="https://packary.us12.list-manage.com/subscribe/post?u=33237ffdf1013ce1e3e521a09&amp;id=4063ea6c2d"
+        method="post"
+        id="mc-embedded-subscribe-form"
+      >
         <div className="sign-up-form__form__email">
           <i className="icon-mail"/>
-          <input className="sign-up-form__form__email__input" name="email" type="email" placeholder="Email address"/>
+          <input className="sign-up-form__form__email__input" name="EMAIL" type="email" placeholder="Email address"/>
         </div>
         <input
           className={`sign-up-form__form__submit sign-up-form__form__submit--${buttonModifier}`}
