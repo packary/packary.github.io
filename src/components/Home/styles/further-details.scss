@@ -1,8 +1,8 @@
 .further-details {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: space-between;
-
+  padding: 1em;
 
   h1, p {
     font-weight: 300;
@@ -20,5 +20,17 @@
         padding: 0;
       }
     }
+  }
+
+  &__title {
+
+  }
+
+  &__p {
+    line-height: 1.5;
+  }
+
+  &__list > li {
+    font-weight: 300;
   }
 }
