@@ -8,7 +8,7 @@ const Hero = () => (
     <div className="hero__inner">
       <div className="hero__title">
         <h1 className="hero__title--big">packary</h1>
-        <h3 className="hero__title--sub">Cheap, secure hosting for your private libraries.</h3>
+        <h3 className="hero__title--sub">Affordable, secure hosting for your private libraries.</h3>
         <SignUpForm />
       </div>
       <div className="hero__demo">

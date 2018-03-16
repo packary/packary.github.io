@@ -10,12 +10,7 @@
   text-align: center;
 
   &__logo {
-    margin-bottom: 0.5em;
     height: 42px;
-  }
-
-  &__list {
-    list-style: none;
-    font-weight: 300;
+    margin: 0;
   }
 }

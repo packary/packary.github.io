@@ -6,4 +6,10 @@
 
 module.exports.onClientEntry = () => {
   require('whatwg-fetch');
+
+  const Sidecar = require('gitter-sidecar');
+
+  new Sidecar({
+    room: 'packary/Lobby'
+  });
 };
