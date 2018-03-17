@@ -4,7 +4,7 @@
  * See: https://www.gatsbyjs.org/docs/node-apis/
  */
 
-exports.modifyWebpackConfig = ({ config, stage }) => {
+module.exports.modifyWebpackConfig = ({ config, stage }) => {
   config.removeLoader('url-loader').loader(`url-loader`, {
     test: /\.(svg|jpg|jpeg|png|gif|mp4|webm|wav|mp3|m4a|aac|oga)(\?.*)?$/,
     loader: `url`,

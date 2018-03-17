@@ -5,6 +5,7 @@
   "author": "packary <5727701+dan-j@users.noreply.github.com>",
   "dependencies": {
     "gatsby": "^1.9.158",
+    "gatsby-1-config-extract-plugin": "^1.0.2",
     "gatsby-link": "^1.6.34",
     "gatsby-plugin-react-helmet": "^2.0.3",
     "gatsby-plugin-sass": "^1.0.17",

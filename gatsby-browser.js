@@ -3,12 +3,8 @@
  *
  * See: https://www.gatsbyjs.org/docs/browser-apis/
  */
-exports.onPreBootstrap = () => {
-  // ensure libs are included in the bundle
-  require('gitter-sidecar');
-};
 
-exports.onClientEntry = () => {
+module.exports.onClientEntry = () => {
   const Sidecar = require('gitter-sidecar');
 
   new Sidecar({
