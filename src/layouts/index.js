@@ -7,9 +7,6 @@ import favicon from '../favicon.png';
 import './index.scss'
 import './fontello.css'
 
-// Ensure this library is added to our bundle - we instantiate it in gatsby-browser.js
-import 'gitter-sidecar';
-
 const TemplateWrapper = ({ children }) => (
   <div>
     <Helmet
