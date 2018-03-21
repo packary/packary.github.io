@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115896508-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-115896508-1');
+        </script>
+        
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css" integrity="sha256-oSrCnRYXvHG31SBifqP2PM1uje7SJUyX0nTwO2RJV54=" crossorigin="anonymous" />
@@ -69,10 +79,12 @@
                 <p>We're on the verge of opening a beta with support for Maven repositories.</p>
                 <p>We'll send you an invitation when it's ready.</p>
                 <p>We won't send you anything else unless you ask for it.</p>
-                <form>
+                <form
+                    action="https://packary.us12.list-manage.com/subscribe/post?u=33237ffdf1013ce1e3e521a09&amp;id=4063ea6c2d" method="post"
+                    id="mc-embedded-subscribe-form">
                     <div class="field email">
                         <i class="icon-mail"></i>
-                        <input type="email" name="email" placeholder="Email Address" />
+                        <input type="email" name="EMAIL" placeholder="Email Address" />
                     </div>
                     <div class="field">
                         <input type="submit" class="button" value="Sign me up!" />
