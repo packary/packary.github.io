@@ -162,7 +162,7 @@ section.dark {
 }
 
 .content {
-    height: 85vh;
+    height: 100vh;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -171,13 +171,13 @@ section.dark {
     padding: 0 1em;
 }
 
+section:not(.last) .content {
+    height: 85vh;
+}
+
 .arrow {
     position: absolute;
     bottom: 0;
-}
-
-section.last .content {
-    height: 100vh;
 }
 
 hr {
