@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    background: #f7f7f7;
+    color: #343434;
+}
+
+/** TYPOGRAPHY **/
+
+@font-face {
+    font-family: PlexSans-Regular;
+    src: url(IBMPlexSans-Regular.otf);
+}
+
+@font-face {
+    font-family: PlexSans-Light;
+    src: url(IBMPlexSans-Light.otf);
+}
+
+@font-face {
+    font-family: PlexSans-Medium;
+    src: url(IBMPlexSans-Medium.otf);
+    font-weight: 700;
+}
+
+html {
+    font-family: PlexSans-Regular;
+    font-size: 16px;
+}
+
+h1 {
+    font-family: PlexSans-Medium;
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0 0 .5em 0;
+}
+
+h1:last-child {
+    margin: .5em 0 0 0;
+}
+
+p {
+    -webkit-margin-before: 0;
+    -webkit-margin-after: 0;
+
+    text-align: center;
+    line-height: 1.5;
+    margin: .5em 0;
+    font-size: 1.25rem;
+}
+
+/** ICONS **/
+
+@font-face {
+    font-family: 'fontello';
+    src: url('./fontello.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    }
+    /* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+    /* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+    /*
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: 'fontello';
+        src: url('../font/fontello.svg?98393966#fontello') format('svg');
+    }
+    }
+    */
+    
+    [class^="icon-"]:before, [class*=" icon-"]:before {
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+    
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+    
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+    
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+    
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+    
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+    }
+    
+    .icon-mail:before { content: '\e800'; } /* '' */
+    .icon-lock:before { content: '\e802'; } /* '' */
+    .icon-globe:before { content: '\e803'; } /* '' */
+    .icon-magic:before { content: '\f0d0'; } /* '' */
+    .icon-sitemap:before { content: '\f0e8'; } /* '' */
+
+/** NAVBAR **/
+
+nav {
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    padding: .25em;
+    align-items: center;
+    background: #f7f7f7;
+    z-index: 1;
+
+    /* box-shadow: 0 2px 6px #e2e2e2; */
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.logo {
+    height: 2.5rem;
+}
+
+.logo-box {
+    background: url(logo-box.png);
+    background-size: 100px;
+    height: 100px;
+    width: 100px;
+}
+
+nav .button {
+    padding: .5em 2em;
+}
+
+/** CONTENT **/
+
+section {
+    height: 100vh;
+    position: relative;
+}
+
+section.gray {
+    background: #f7f7f7;
+}
+
+section.pink {
+    background: #ff6f6f;
+    color: #f7f7f7;
+}
+
+section.dark {
+    background: #2c373d;
+    color: #f7f7f7;
+}
+
+.content {
+    height: 85vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 1em;
+}
+
+.arrow {
+    position: absolute;
+    bottom: 0;
+}
+
+section.last .content {
+    height: 100vh;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    padding: 0; 
+    width: 50%;
+}
+
+@media(min-width: 768px) {
+    .content {
+        max-width: 75%;
+    }
+}
+
+@media(min-width: 1024px) {
+    .content {
+        max-width: 66%;
+    }
+}
+
+/** FORMS **/
+
+form {
+    width: 50%;
+    margin: 3rem auto 0;
+}
+
+@media(max-width: 768px) {
+    form {
+        width: 100%;
+    }
+}
+
+form .field {
+    margin-bottom: 1em;
+}
+
+input {
+    border-radius: 2px;
+    border: none;
+    width: 100%;
+    padding: .75em;
+    box-sizing: border-box;
+}
+
+.button {
+    background: linear-gradient(123deg,#ff6f6f,#ff6f93);
+    border: none;
+    padding: .75em 2em;
+    border-radius: 2px;
+    color: #f7f7f7;
+    text-decoration: none;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+form button {
+    width: 100%;
+}
+
+.email {
+    position: relative;
+}
+
+.email .icon-mail {
+    position: absolute;
+    left: .5em;
+    top: .75em;
+    color: #4e4e4e;
+}
+
+.email input {
+    padding-left: 2.5em;
+}
+
+/** FOOTER **/
+
+footer {
+    background: #2c373d;
+    color: #f7f7f7;
+    overflow: auto;
+    padding-bottom: 3rem;
+}
+
+footer .content {
+    height: auto;
+}
+
+footer p, footer a {
+    font-size: .75rem;
+}
+
+footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+img.twitter {
+    height: 75px;
+}

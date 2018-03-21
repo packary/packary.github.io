@@ -1,0 +1,45 @@
+Arguments: 
+  /Volumes/Users/mbfisher/.nvm/versions/node/v9.4.0/bin/node /Volumes/Users/mbfisher/.npm/bin/yarn
+
+PATH: 
+  /Volumes/Users/mbfisher/.nvm/versions/node/v9.4.0/bin:./node_modules/.bin:/usr/local/Cellar/pyenv-virtualenv/1.0.0/shims:/Volumes/Users/mbfisher/.pyenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Volumes/Users/mbfisher/bin:/Volumes/Users/mbfisher/.npm/bin:/Volumes/Users/mbfisher/.composer/vendor/bin:/usr/local/sbin
+
+Yarn version: 
+  1.5.1
+
+Node version: 
+  9.4.0
+
+Platform: 
+  darwin x64
+
+npm manifest: 
+  {
+    "name": "packary-landing-page",
+    "description": "Landing page for packary.io",
+    "version": "1.0.0",
+    "author": "packary <5727701+dan-j@users.noreply.github.com>",
+    "dependencies": {
+    "main": "index.html",
+    "scripts": {
+      "deploy": "gh-pages -d public -b master -m \"Deployed by $USER on $(date)\""
+    },
+    "devDependencies": {
+      "gh-pages": "^1.1.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
+
+Trace: 
+  SyntaxError: /Volumes/VCS/packary.io/package.json: Unexpected end of JSON input
+      at JSON.parse (<anonymous>)
+      at /Volumes/Users/mbfisher/.npm/lib/node_modules/yarn/lib/cli.js:1036:59
+      at Generator.next (<anonymous>)
+      at step (/Volumes/Users/mbfisher/.npm/lib/node_modules/yarn/lib/cli.js:98:30)
+      at /Volumes/Users/mbfisher/.npm/lib/node_modules/yarn/lib/cli.js:109:13
+      at <anonymous>
