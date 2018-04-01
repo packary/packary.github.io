@@ -11,6 +11,9 @@
     "gatsby-plugin-react-helmet": "^2.0.3",
     "gatsby-plugin-sass": "^1.0.17",
     "gatsby-plugin-typography": "^1.7.13",
+    "gatsby-source-filesystem": "^1.5.27",
+    "gatsby-transformer-remark": "^1.7.39",
+    "graphql": "^0.11.7",
     "normalize.css": "^8.0.0",
     "prop-types": "^15.6.0",
     "react": "^15.6.2",
@@ -31,5 +34,8 @@
   "devDependencies": {
     "gh-pages": "^1.1.0",
     "prettier": "^1.10.2"
+  },
+  "resolutions": {
+    "graphql": "^0.11.7"
   }
 }

@@ -1,0 +1,30 @@
+.md-page {
+  box-sizing: border-box;
+  margin: 1em auto;
+  padding: 0 2em;
+
+  @media screen and (min-width: 576px) {
+    padding: 0 3em;
+  }
+
+  &__content {
+
+    ol > li {
+
+      &, & > p:first-child {
+        font-size: 1.25rem;
+      }
+
+      & > p {
+        font-size: 1rem;
+      }
+    }
+
+    ol > li > ul {
+      margin-left: 2em;
+      list-style-type: lower-roman;
+      font-size: 1rem;
+    }
+
+  }
+}

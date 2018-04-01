@@ -4,14 +4,15 @@ import SuperSimple from '../components/Home/SuperSimple';
 import OneTwoThree from '../components/Home/OneTwoThree';
 import FurtherDetails from '../components/Home/FurtherDetails';
 import { Footer } from "../components/Footer";
+import Pricing from "../components/Home/Pricing";
 
 const IndexPage = () => (
   <div>
     <Hero />
     <SuperSimple />
-    <OneTwoThree />
     <FurtherDetails />
-    <Footer />
+    <Pricing />
+    <OneTwoThree />
   </div>
 );
 

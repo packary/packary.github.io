@@ -2,15 +2,62 @@
 
 .footer {
   width: 100%;
-  background-color: $gray;
+  background-color: $darkBlue;
   color: $offWhite;
   border-top: 1px solid #888888;
 
-  padding: 2em 1em;
-  text-align: center;
+  padding: 2em;
+  text-align: left;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1020px;
+    margin: auto;
+  }
+
+  a {
+    color: white;
+  }
 
   &__logo {
     height: 42px;
-    margin: 0;
+    margin: 0 0 1rem;
+  }
+
+  &__links {
+    &__list#{&}__list {
+      margin: 0 0 0 8px;
+    }
+  }
+
+  &__links, &__contact {
+    width: 300px;
+
+    &__list {
+      margin: 0;
+      list-style: none;
+      font-size: 0.9em;
+      font-weight: 300;
+    }
+  }
+
+  &__contact {
+    &__list {
+      li { display: inline;}
+    }
+  }
+
+  &__contact {
+    &__header {
+      line-height: 42px;
+      height: 42px;
+      margin: 0 0 1rem;
+    }
+  }
+  &__social {
+    height: 42px;
   }
 }

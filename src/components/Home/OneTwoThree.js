@@ -19,7 +19,7 @@ const OneTwoThree = () => (
           </li>
           <li className="one-two-three__list__item">
             <p>Our registries use the same APIs as their open source counterparts, so they'll work with
-              all your tooling.</p>
+              all your existing tools/CI processes.</p>
           </li>
         </ol>
       </div>

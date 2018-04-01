@@ -10,12 +10,18 @@ module.exports = {
       options: {
         pathToConfigModule: 'src/utils/typography.js',
       },
-    },
-    {
+    }, {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: 'UA-115896508-1'
       }
-    }
+    }, {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: 'src/markdown/',
+        name: "markdown-pages",
+      },
+    },
+    'gatsby-transformer-remark',
   ],
 };

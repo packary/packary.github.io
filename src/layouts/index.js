@@ -2,6 +2,7 @@ import React from 'react'
 import T from 'prop-types'
 import Helmet from 'react-helmet'
 import Navbar from '../components/Navbar';
+import { Footer } from '../components/Footer';
 
 import favicon from '../favicon.png';
 import './index.scss'
@@ -21,6 +22,7 @@ const TemplateWrapper = ({ children }) => (
     />
     <Navbar />
     {children()}
+    <Footer />
   </div>
 );
 
