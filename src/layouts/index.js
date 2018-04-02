@@ -9,9 +9,9 @@ import './index.scss'
 import './fontello.css'
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <div className="page">
     <Helmet
-      title="Packary | Beta Invitation"
+      title="Packary | Hosted Maven Repositories"
       meta={[
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
@@ -21,7 +21,7 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <Navbar />
-    {children()}
+    <div className="page__body">{children()}</div>
     <Footer />
   </div>
 );

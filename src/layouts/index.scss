@@ -1,6 +1,10 @@
 @import '~normalize.css';
 @import '../utils/constants.scss';
 
+html, body, #___gatsby {
+  height: 100%;
+}
+
 body {
   background: $offWhite;
   color: $dark;
@@ -35,6 +39,16 @@ a {
   max-width: $maxWidth;
   padding: 1em;
   margin: 0 auto;
+}
+
+.page {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  &__body {
+    flex: 1 0 auto;
+  }
 }
 
 @media(min-width: 1020px) {
